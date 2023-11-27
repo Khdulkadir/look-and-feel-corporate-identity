@@ -1,0 +1,88 @@
+/* Fonts being used by the oba */
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../fonts/Avenir-roman.ttf);
+}
+
+@font-face {
+  font-family: AvenirBlack;
+  src: url(../fonts/Avenir-black.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ===== Colors ===== */
+  --color-white: #ffffff;
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-darkgrey: #707070;
+
+  /* ===== Typography ===== */
+  --font-paragraph: 400 16px/1.5 "AvenirRoman", "Arial", sans-serif;
+  --heading-2-font: 700 2.25rem/1.5 "AvenirBlack", "Arial", sans-serif;
+  --heading-3-font: 700 2rem/1.5 "AvenirBlack", "Arial", sans-serif;
+  --heading-4-font: 700 1.3462rem/1.5 "AvenirBlack", "Arial", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-white);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+/* ===== Sidebar ===== */
+nav.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 260px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 20px;
+  box-shadow: 7px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar li {
+  height: 50px;
+  list-style: none;
+}
+
+.sidebar li a {
+  all: unset;
+  font: var(--font-paragraph);
+  cursor: pointer;
+}
+
+.sidebar li a:hover {
+  color: var(--color-red);
+}
+
+.profile-picture {
+  border-radius: 100%;
+}
+
+.user-info {
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+
+.user-info-text {
+  padding-left: 10px;
+  padding-top: 5px;
+  font: var(--font-paragraph);
+}
+
+main {
+  margin-left: 260px;
+}
