@@ -11,7 +11,7 @@ function setActive(index) {
   listItems[index].classList.add("active");
 }
 
-setActive(1);
+setActive(0);
 
 // MOBILE MENU COLLAPSE
 
