@@ -54,6 +54,8 @@ nav.sidebar {
   padding: 1rem;
   box-shadow: 7px 0px 20px 0px rgba(0, 0, 0, 0.15);
   background-color: var(--color-white);
+  transition: transform ease-in-out 0.3s;
+  transform: translateX(0);
 }
 
 .sidebar li {
@@ -95,6 +97,10 @@ nav li.active > a:hover {
   color: var(--color-white);
 }
 
+.bx.bx-menu.icon {
+  display: none;
+}
+
 .profile-picture {
   border-radius: 100%;
 }
@@ -112,6 +118,34 @@ nav li.active > a:hover {
 
 main {
   margin-left: 260px;
+}
+
+/* ===== Sidebar Mobile ===== */
+
+@media screen and (max-width: 768px) {
+  nav.sidebar {
+    width: 260px;
+    transform: translateX(-260px);
+  }
+
+  nav.sidebar.collapsed {
+    width: 260px;
+    transform: translateX(0);
+  }
+
+  .bx.bx-menu.icon {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 30px;
+    top: 40px;
+    font-size: 30px;
+    transition: ease-in-out 0.3s;
+  }
+
+  .bx.bx-menu.icon.collapsed {
+    left: 220px;
+  }
 }
 
 /* ===== Headings and Parapgraphs ===== */
