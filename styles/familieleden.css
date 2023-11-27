@@ -1,88 +1,151 @@
-/* Fonts being used by the oba */
-@font-face {
-  font-family: AvenirRoman;
-  src: url(../fonts/Avenir-roman.ttf);
+/* ===== MAIN FAMILIELEDEN ===== */
+
+/* main {
+  background-image: url(../image/SL-052622-50580-21.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.448);
+  height: 100vh;
+} */
+
+/* .home {
+  position: relative;
+  background-repeat: no-repeat;
+  transition: var(--tran-05);
+  position: relative;
+  background-image: url(../image/banner2.jpg);
+  background-size: 100%;
+  padding-bottom: 0px;
+  padding-top: 25px;
+  text-align: center;
+} */
+
+/* h1 {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 35px;
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  font-family: "AvenirBlack";
+} */
+
+.selecteer {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px;
+  background-color: #b31414;
+  color: white;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "AvenirMedium";
+  border-width: 0;
 }
 
-@font-face {
-  font-family: AvenirBlack;
-  src: url(../fonts/Avenir-black.ttf);
+.selecteer:hover {
+  background-color: #d01a1a;
+  transition: 0.3s;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.accounts {
+  padding-left: 70px;
+  padding-top: 50px;
+  /* background-image: url(../image/SL-052622-50580-21.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.013); */
 }
 
-:root {
-  /* ===== Colors ===== */
-  --color-white: #ffffff;
-  --color-red: #ff0000;
-  --color-black: #000000;
-  --color-darkgrey: #707070;
+/* h3 {
+  padding-left: 50px;
+  font-family: "AvenirBlack";
+  color: black;
+} */
 
-  /* ===== Typography ===== */
-  --font-paragraph: 400 16px/1.5 "AvenirRoman", "Arial", sans-serif;
-  --heading-2-font: 700 2.25rem/1.5 "AvenirBlack", "Arial", sans-serif;
-  --heading-3-font: 700 2rem/1.5 "AvenirBlack", "Arial", sans-serif;
-  --heading-4-font: 700 1.3462rem/1.5 "AvenirBlack", "Arial", sans-serif;
+.boete::before,
+.inleverdatum::before,
+.geleend::before {
+  content: "• ";
 }
 
-body {
-  min-height: 100vh;
-  background-color: var(--color-white);
-  overflow-x: hidden;
+li.account {
+  position: relative;
+  padding: 10px;
+  float: left;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  border-color: #a8a8a8;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  font-family: "AvenirMedium";
+  /* background-image: url(../image/SL-052622-50580-21.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.637); */
 }
 
-::selection {
-  background-color: var(--color-red);
-  color: var(--color-white);
+li.addaccount {
+  position: relative;
+  padding: 10px;
+  display: block;
+  float: left;
+  margin-left: 130px;
+  margin-top: 60px;
 }
 
-/* ===== Sidebar ===== */
-nav.sidebar {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 260px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding: 20px;
-  box-shadow: 7px 0px 20px 0px rgba(0, 0, 0, 0.15);
-}
-
-.sidebar li {
-  height: 50px;
-  list-style: none;
-}
-
-.sidebar li a {
-  all: unset;
-  font: var(--font-paragraph);
-  cursor: pointer;
-}
-
-.sidebar li a:hover {
-  color: var(--color-red);
+.bx-plus {
+  font-size: 100px;
+  color: red;
+  background-color: white;
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a8a8a8;
 }
 
 .profile-picture {
-  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
-.user-info {
+.profile-info {
   display: flex;
-  padding: 20px 0 20px 0;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.user-info-text {
-  padding-left: 10px;
-  padding-top: 5px;
-  font: var(--font-paragraph);
+.bx-dots-vertical {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 190px;
+  margin-top: 0px;
 }
 
-main {
-  margin-left: 260px;
+ul.account-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* MEDIA QUERY DESKTOP */
+
+@media (min-width: 1280px) {
+  main {
+    margin-left: 250px;
+  }
+  .sidebar header .toggle {
+    display: none;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
 }
