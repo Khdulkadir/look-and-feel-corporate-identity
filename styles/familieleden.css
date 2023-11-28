@@ -11,7 +11,7 @@ section.accounts {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   background-color: var(--color-lightblue);
-  margin: 20px 20px 20px 30px;
+  margin: 20px;
   padding: 30px;
   border-radius: var(--border-radius);
   justify-items: center;
@@ -33,7 +33,7 @@ article.addaccount {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 289px;
 }
 
 button.selecteer {
@@ -95,16 +95,18 @@ p.typeaccount {
 
 /* MEDIA QUERY TABLET */
 
-@media (max-width: 1251px) {
+@media (max-width: 1000px) {
   section.accounts {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+    padding: 10px;
   }
 }
 
 /* MEDIA QUERY MOBILE */
 
-@media (max-width: 970px) {
+@media (max-width: 700px) {
   section.accounts {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
