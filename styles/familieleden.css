@@ -89,6 +89,10 @@ h2 {
   padding-top: 30px;
 }
 
+p.typeaccount {
+  margin-bottom: -20px;
+}
+
 /* MEDIA QUERY TABLET */
 
 @media (max-width: 1251px) {
