@@ -1,17 +1,17 @@
 // SIDEBAR GIVE ACTIVE ITEM BACKGROUND COLOR
 
-const nav = document.getElementsByClassName("menu-links")[0];
-const listItems = nav.getElementsByTagName("li");
+// const nav = document.getElementsByClassName("menu-links")[0];
+// const listItems = nav.getElementsByTagName("li");
 
-function setActive(index) {
-  for (let i = 0; i < listItems.length; i++) {
-    listItems[i].classList.remove("active");
-  }
+// function setActive(index) {
+//   for (let i = 0; i < listItems.length; i++) {
+//     listItems[i].classList.remove("active");
+//   }
 
-  listItems[index].classList.add("active");
-}
+//   listItems[index].classList.add("active");
+// }
 
-setActive(0);
+// setActive(1);
 
 // MOBILE MENU COLLAPSE
 
