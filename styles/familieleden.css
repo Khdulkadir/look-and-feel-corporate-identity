@@ -1,151 +1,108 @@
 /* ===== MAIN FAMILIELEDEN ===== */
 
-/* main {
-  background-image: url(../image/SL-052622-50580-21.jpg);
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.448);
-  height: 100vh;
-} */
+body {
+  background-color: var(--color-white);
+}
 
-/* .home {
-  position: relative;
-  background-repeat: no-repeat;
-  transition: var(--tran-05);
-  position: relative;
-  background-image: url(../image/banner2.jpg);
-  background-size: 100%;
-  padding-bottom: 0px;
-  padding-top: 25px;
+section.accounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: var(--color-lightblue);
+  margin: 20px 20px 20px 30px;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  justify-items: center;
+}
+
+article.account {
+  background-color: var(--color-white);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 300px;
+}
+
+article.addaccount {
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+button.selecteer {
   text-align: center;
-} */
-
-/* h1 {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  border-radius: 10px;
-  font-size: 35px;
-  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
-  font-family: "AvenirBlack";
-} */
-
-.selecteer {
-  text-align: center;
-  padding-top: 5px;
-  font-size: 16px;
-  background-color: #b31414;
-  color: white;
-  padding-bottom: 5px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 5px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
-  font-family: "AvenirMedium";
+  font: var(--font-paragraph);
+  cursor: pointer;
   border-width: 0;
 }
 
-.selecteer:hover {
-  background-color: #d01a1a;
-  transition: 0.3s;
-}
-
-.accounts {
-  padding-left: 70px;
-  padding-top: 50px;
-  /* background-image: url(../image/SL-052622-50580-21.jpg);
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.013); */
-}
-
-/* h3 {
-  padding-left: 50px;
-  font-family: "AvenirBlack";
-  color: black;
-} */
-
-.boete::before,
-.inleverdatum::before,
-.geleend::before {
+p.boete::before,
+p.inleverdatum::before,
+p.geleend::before {
   content: "• ";
 }
 
-li.account {
-  position: relative;
-  padding: 10px;
-  float: left;
-  background-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-  border-color: #a8a8a8;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  font-family: "AvenirMedium";
-  /* background-image: url(../image/SL-052622-50580-21.jpg);
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.637); */
-}
-
-li.addaccount {
-  position: relative;
-  padding: 10px;
-  display: block;
-  float: left;
-  margin-left: 130px;
-  margin-top: 60px;
-}
-
-.bx-plus {
+i.bx-plus {
   font-size: 100px;
-  color: red;
-  background-color: white;
+  color: var(--color-white);
+  background-color: var(--color-red);
   border-radius: 100%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #a8a8a8;
+  cursor: pointer;
 }
 
-.profile-picture {
+img.profile-picture {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
-.profile-info {
+div.profile-info {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.bx-dots-vertical {
-  position: absolute;
+i.bx-dots-vertical {
+  position: relative;
   font-size: 20px;
   margin-left: 190px;
   margin-top: 0px;
+  cursor: pointer;
 }
 
-ul.account-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+h2 {
+  text-align: center;
+  padding-top: 30px;
 }
 
-/* MEDIA QUERY DESKTOP */
+/* MEDIA QUERY TABLET */
 
-@media (min-width: 1280px) {
-  main {
-    margin-left: 250px;
+@media (max-width: 1251px) {
+  section.accounts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
-  .sidebar header .toggle {
-    display: none;
-  }
+}
 
-  h1 {
-    font-size: 55px;
+/* MEDIA QUERY MOBILE */
+
+@media (max-width: 970px) {
+  section.accounts {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 }

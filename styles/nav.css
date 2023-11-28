@@ -28,6 +28,9 @@
   --heading-2-font: 700 2.25rem/1.5 "AvenirBlack", "Arial", sans-serif;
   --heading-3-font: 700 2rem/1.5 "AvenirBlack", "Arial", sans-serif;
   --heading-4-font: 700 1.3462rem/1.5 "AvenirBlack", "Arial", sans-serif;
+
+  --border-radius: 10px;
+  --box-shadow: 1px 1px 5px #000;
 }
 
 body {
@@ -145,6 +148,10 @@ main {
 
   .bx.bx-menu.icon.collapsed {
     left: 220px;
+  }
+
+  main {
+    margin-left: 0px;
   }
 }
 
