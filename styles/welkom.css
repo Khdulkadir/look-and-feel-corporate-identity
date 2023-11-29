@@ -52,6 +52,7 @@ div.menu-item {
   padding: 10px;
   box-shadow: var(--box-shadow);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 div.menu-item:hover {
