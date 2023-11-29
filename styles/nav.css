@@ -35,7 +35,7 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--color-lightblue);
+  background-color: var(--color-white);
   overflow-x: hidden;
 }
 
@@ -102,7 +102,7 @@ nav.sidebar li a:hover {
   color: var(--color-white);
 }
 
-i.bx.bx-menu.icon {
+.bx.bx-menu.icon {
   display: none;
 }
 
@@ -172,5 +172,9 @@ h4 {
 }
 
 p {
+  font: var(--font-paragraph);
+}
+
+li {
   font: var(--font-paragraph);
 }

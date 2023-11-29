@@ -1,0 +1,64 @@
+span.welkom-intro-heading {
+  color: var(--color-red);
+}
+
+section.welkom-intro {
+  display: flex;
+  padding: 50px 30px 30px 30px;
+}
+
+article.welkom-intro-left {
+  width: 50%;
+  background-color: var(--color-lightblue);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-right: 30px;
+}
+
+article.welkom-intro-right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: var(--color-lightblue);
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+ul.welkom-ul {
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+ul.welkom-ul > li {
+  padding-top: 10px;
+}
+
+div.welkom-heading-img {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+div.menu-item {
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+div.menu-item:hover {
+  background-color: var(--color-red);
+  color: white;
+}
+
+div.menu-item > i {
+  font-size: 30px;
+}
