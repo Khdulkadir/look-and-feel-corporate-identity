@@ -1,9 +1,5 @@
 /* ===== MAIN FAMILIELEDEN ===== */
 
-body {
-  background-color: var(--color-white);
-}
-
 section.accounts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
