@@ -54,3 +54,8 @@ button.next {
   right: 10px;
   font-size: 30px;
 }
+
+button.prev:hover,
+button.next:hover {
+  color: var(--color-red);
+}
