@@ -40,12 +40,13 @@ div.book {
   margin-right: 25px;
   box-shadow: var(--box-shadow);
   background-color: var(--color-white);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 
 div.book img {
@@ -89,11 +90,45 @@ button.next:hover {
 }
 
 h3.book-title {
-  font-size: 16px;
+  font-size: 18px;
+  padding-bottom: 20px;
 }
 
 .book > p {
   font: var(--font-paragraph);
   font-size: 14px;
   color: #686868;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow-y: auto;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  color: #888;
+  margin-left: 130px;
+}
+
+.book > p.info-text {
+  display: none;
 }
