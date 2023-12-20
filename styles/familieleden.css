@@ -15,8 +15,8 @@ main {
 
 section.accounts {
   display: flex;
-  margin: 20px;
-  padding: 30px;
+  margin: 0px;
+  padding: 0px;
   border-radius: var(--border-radius);
   justify-content: center;
   flex-wrap: wrap;
@@ -25,21 +25,19 @@ section.accounts {
 
 article.account {
   background-color: var(--color-white);
-  padding: 10px;
+  padding: 20px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 article.addaccount {
-  background-color: var(--color-white);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-  max-width: 300px;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 289px;
+  width: 310px;
 }
 
 button.selecteer {
@@ -52,12 +50,37 @@ button.selecteer {
   font: var(--font-paragraph);
   cursor: pointer;
   border-width: 0;
+  width: 150px;
 }
 
-p.boete::before,
-p.inleverdatum::before,
+p.geleend,
+p.boete,
+p.inleverdatum {
+  font: var(--font-small);
+}
+
+p.boete::before {
+  content: "\eefa";
+  font-family: boxicons;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #686868;
+}
+
+p.inleverdatum::before {
+  content: "\ed02";
+  font-family: boxicons;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #686868;
+}
+
 p.geleend::before {
-  content: "• ";
+  content: "\ecd8";
+  font-family: boxicons;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #686868;
 }
 
 i.bx-plus {
@@ -85,8 +108,11 @@ i.bx-dots-vertical {
   position: relative;
   font-size: 20px;
   margin-left: 190px;
-  margin-top: 0px;
   cursor: pointer;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 h2 {
@@ -98,6 +124,7 @@ h2 {
 
 p.typeaccount {
   margin-bottom: -20px;
+  font-size: 14px;
 }
 
 /* MEDIA QUERY TABLET */

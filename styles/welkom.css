@@ -81,3 +81,23 @@ div.menu-item:hover {
 div.menu-item > i {
   font-size: 30px;
 }
+
+@media only screen and (max-width: 760px) {
+  article.welkom-intro-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  article.welkom-intro-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  div.menu-item {
+    height: 125px;
+    width: 150px;
+  }
+}
