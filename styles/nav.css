@@ -19,7 +19,7 @@
   /* ===== Colors ===== */
   --color-white: #ffffff;
   --color-lightblue: #e4e9f7;
-  --color-red: #ff0000;
+  --color-red: #136fbc;
   --color-black: #000000;
   --color-darkgrey: #707070;
 
@@ -88,6 +88,7 @@ nav.sidebar li {
   background-color: var(--color-white);
   list-style: none;
   padding: 0px 10px;
+  margin: 3px 0;
 }
 
 nav.sidebar li:hover {
@@ -115,6 +116,33 @@ nav.sidebar li a {
 
 nav.sidebar li a:hover {
   color: var(--color-white);
+}
+
+nav.sidebar li.search-box {
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--color-lightblue);
+  padding: 0px;
+}
+
+nav.sidebar li.search-box input {
+  outline: none;
+  border: none;
+  background-color: var(--color-lightblue);
+  height: 100%;
+  color: var(--color-black);
+  font: var(--font-paragraph);
+  padding-left: 5px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+nav.sidebar li.search-box:hover {
+  color: var(--color-black);
+  cursor: unset;
+}
+
+nav.sidebar li.search-box i {
+  padding-left: 10px;
 }
 
 .bx.bx-menu.icon {

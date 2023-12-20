@@ -2,29 +2,46 @@ span.welkom-intro-heading {
   color: var(--color-red);
 }
 
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/Oba\ bg\ 5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 section.welkom-intro {
   display: flex;
-  padding: 50px 30px 30px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 article.welkom-intro-left {
   width: 50%;
-  background-color: var(--color-lightblue);
+  background-color: var(--color-white);
   padding: 20px;
   border-radius: var(--border-radius);
-  margin-right: 30px;
+  box-shadow: var(--box-shadow);
+  margin-right: 5px;
+  display: none;
 }
 
 article.welkom-intro-right {
-  width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
-  background-color: var(--color-lightblue);
-  padding: 20px;
   border-radius: var(--border-radius);
+  margin-left: 5px;
 }
 
 ul.welkom-ul {
@@ -49,10 +66,11 @@ div.menu-item {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
   box-shadow: var(--box-shadow);
   cursor: pointer;
   transition: 0.3s;
+  height: 150px;
+  width: 200px;
 }
 
 div.menu-item:hover {
