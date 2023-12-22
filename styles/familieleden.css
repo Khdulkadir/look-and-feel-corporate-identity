@@ -57,6 +57,7 @@ p.geleend,
 p.boete,
 p.inleverdatum {
   font: var(--font-small);
+  color: #7a7a7a;
 }
 
 p.boete::before {
@@ -64,7 +65,7 @@ p.boete::before {
   font-family: boxicons;
   padding-right: 10px;
   font-size: 20px;
-  color: #686868;
+  color: #7a7a7a;
 }
 
 p.inleverdatum::before {
@@ -72,7 +73,7 @@ p.inleverdatum::before {
   font-family: boxicons;
   padding-right: 10px;
   font-size: 20px;
-  color: #686868;
+  color: #7a7a7a;
 }
 
 p.geleend::before {
@@ -80,7 +81,7 @@ p.geleend::before {
   font-family: boxicons;
   padding-right: 10px;
   font-size: 20px;
-  color: #686868;
+  color: #7a7a7a;
 }
 
 i.bx-plus {
